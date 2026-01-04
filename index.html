@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סרטון במסך מלא</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <video controls autoplay muted loop>
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        הדפדפן שלך לא תומך בתגית וידאו.
+    </video>
+</body>
+</html>
+```
+
+5. גלול למטה ולחץ **Commit new file** (השאר את ה-commit message כמו שהוא)
+
+## שלב 3: הפעלת GitHub Pages
+
+1. בריפוזיטורי, לחץ על **Settings** (לשונית עליונה)
+2. בתפריט הצדדי השמאלי, לחץ על **Pages**
+3. תחת **Source/Branch**, בחר **main** (או master)
+4. השאר את התיקייה כ-**/ (root)**
+5. לחץ **Save**
+
+## שלב 4: המתן והיכנס לאתר
+
+אחרי כ-1-2 דקות, רענן את הדף. תראה הודעה ירוקה עם הקישור לאתר שלך:
+```
+Your site is live at https://[שם-המשתמש].github.io/[שם-הריפוזיטורי]/
