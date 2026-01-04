@@ -15,37 +15,33 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            background-color: #000;
         }
         
-        video {
+        iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: 100%;
-            object-fit: contain;
-            background-color: #000;
+            border: none;
+        }
+        
+        /* אופטימיזציה למובייל */
+        @media (max-width: 768px) {
+            iframe {
+                width: 100vw;
+                height: 100vh;
+            }
         }
     </style>
 </head>
 <body>
-    <video controls autoplay muted loop>
-        <source src="https://www.youtube.com/shorts/EbiH41aYmkg">
-        הדפדפן שלך לא תומך בתגית וידאו.
-    </video>
+    <iframe 
+        src="https://www.youtube.com/embed/EbiH41aYmkg?autoplay=1&mute=1&loop=1&playlist=EbiH41aYmkg&controls=1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
-```
-
-5. גלול למטה ולחץ **Commit new file** (השאר את ה-commit message כמו שהוא)
-
-## שלב 3: הפעלת GitHub Pages
-
-1. בריפוזיטורי, לחץ על **Settings** (לשונית עליונה)
-2. בתפריט הצדדי השמאלי, לחץ על **Pages**
-3. תחת **Source/Branch**, בחר **main** (או master)
-4. השאר את התיקייה כ-**/ (root)**
-5. לחץ **Save**
-
-## שלב 4: המתן והיכנס לאתר
-
-אחרי כ-1-2 דקות, רענן את הדף. תראה הודעה ירוקה עם הקישור לאתר שלך:
-```
-Your site is live at https://[שם-המשתמש].github.io/[שם-הריפוזיטורי]/
